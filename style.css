@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "LetraLogo";
+  src: url(fonts/LoveYaLikeASister-Regular.ttf);
+}
+
+:root {
+  --color-1: #1d0a00;
+  --color-2: #743414;
+  --color-3: #8d4925;
+  --color-4: #b96e48;
+  --color-5: #e6966e;
+}
+
+header {
+  background-color: var(--color-1);
+  text-align: center;
+  color: white;
+}
+
+#logo {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 20px;
+}
+
+#logo h1 {
+  font-family: "LetraLogo";
+  font-size: 50px;
+  letter-spacing: 6px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+  margin: 5px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+li:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/* ----------- SECCION 1 ------------ */
+
+#sec1 {
+  background-image: url(/img/pexels-photo-302899.webp);
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+#sec1 h1 {
+  font-family: "Cedarville Cursive";
+  font-size: 80px;
+  padding-bottom: 20px;
+}
+
+#div1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 60px 100px 100px 100px;
+}
+
+#div1 p,
+#div1 h1 {
+  margin: 0px auto 0px auto;
+  width: 700px;
+}
+
+/* ----------- SECCION 2 ------------ */
+
+#sec2 {
+  background-color: var(--color-3);
+  color: white;
+  padding-bottom: 60px;
+}
+h2 {
+  text-align: center;
+  padding: 50px;
+  font-size: 35px;
+}
+article {
+  width: 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin: 0px 20px 20px 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+article h3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: #3f1500 2px solid;
+}
+
+article h4 {
+  padding-top: 5px;
+  font-size: 17px;
+}
+
+article p {
+  padding-top: 5px;
+  font-size: 13px;
+}
+#divArticulos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+article img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+/* ----------- SECCION 3 ------------ */
+
+#sec3 {
+  background-color: var(--color-2);
+  color: white;
+}
+
+#grilla {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
+  border: white 3px solid;
+  box-sizing: border-box;
+  gap: 5px;
+  object-fit: cover;
+}
+
+#grilla img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.img-col-2{
+    grid-column: span 2;
+}
+
+.img-row-2 {
+    grid-row: span 2;
+}
