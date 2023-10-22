@@ -427,7 +427,6 @@ form select {
 }
 
 input[type="submit"] {
-  background-color: red;
   float: right;
   background-color: #838383;
   padding: 10px 20px;
