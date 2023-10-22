@@ -126,7 +126,7 @@ h2 {
 }
 
 #sec2 article h4 {
-  padding-top: 5px;
+  padding: 10px 0px;
   font-size: 17px;
 }
 
@@ -360,38 +360,47 @@ th {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px;
+  padding: 40px;
   background-color: var(--color-5);
 }
 
 #sec5 h2 {
+  color: white;
+
   padding: 0px;
   padding-bottom: 40px;
 }
+
 #sec5 form {
-  border: 2px solid black;
-  margin: 0px 200px;
+  margin: 0px;
+  width: 1200px;
 }
 
-#form-field-container {
+#inputs-container {
   display: flex;
+  justify-content: center;
 }
-
-#form-izq {
+#select-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#izq {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-#form-der {
+#der {
   width: 50%;
-  padding-left: 20px;
+
+  margin-left: 80px;
 }
 
-textarea {
-  resize: none;
+form textarea {
   width: 100%;
-  height: 100%;
+  height: 140px;
+  resize: none;
 }
 
 form input,
@@ -400,10 +409,14 @@ form textarea {
   background-color: rgb(230, 230, 230);
   border: none;
   padding: 5px;
-  width: 400px;
   box-sizing: border-box;
-  margin-bottom: 20px;
 }
+
+form label:nth-child(3),
+form label:nth-child(5) {
+  margin-top: 15px;
+}
+
 label {
   font-weight: 700;
   font-size: 14px;
@@ -411,14 +424,16 @@ label {
 
 form select {
   width: 50%;
-  display: inline;
 }
-.select-checkbox-container {
-  display: flex;
-  margin-bottom: 10px;
-}
+
 input[type="submit"] {
   background-color: red;
+  float: right;
+  background-color: #838383;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 /* ----------- FOOTER ------------ */

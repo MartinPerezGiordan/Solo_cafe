@@ -28,7 +28,7 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#sec2">Mas vendidos</a></li>
+        <li><a href="#sec2">Más vendidos</a></li>
         <li><a href="#sec3">Temática</a></li>
         <li><a href="#sec4">Oferta especial</a></li>
         <li><a href="#sec5">Contacto</a></li>
@@ -61,6 +61,8 @@
               sistema de filtración de 4 niveles.
             </p>
             <h4>$3700</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+
           </div>
         </article>
         <article>
@@ -72,6 +74,8 @@
               capacidad de 0.71 oz.
             </p>
             <h4>$1299</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+
           </div>
         </article>
         <article>
@@ -83,6 +87,8 @@
               diferentes secciones.
             </p>
             <h4>$850</h4>
+            <a href="#" class="btn-comprar">Comprar</a>
+
           </div>
         </article>
       </div>
@@ -206,14 +212,14 @@
     <section id="sec5">
       <h2>Contacto</h2>
       <form action="#" method="get">
-        <div id="form-field-container">
-          <div id="form-izq">
+        <div id="inputs-container">
+          <div id="izq">
             <label for="nombre">Nombre y apellido*</label>
             <input type="text" id="nombre" placeholder="Juan Perez" name="nombre-y-apellido" required>
             <label for="mail">Mail*</label>
             <input type="mail" id="mail" name="mail" placeholder="ejemplo@gmail.com" required>
             <label for="pais">País</label>
-            <div class="select-checkbox-container">
+            <div id="select-container">
               <select name="país" id="pais">
                 <option value="UY">Uruguay</option>
                 <option value="US">Estados Unidos</option>
@@ -222,11 +228,13 @@
                 <option value="UK">Reino Unido</option>
                 <option value="JP">Japón</option>
               </select>
-              <input type="checkbox" name="novedades" id="novedades">
-              <label for="novedades">Quiero recibir novedades</label>
+              <div>
+                <input type="checkbox" name="novedades" id="novedades">
+                <label for="novedades">Quiero recibir novedades</label>
+              </div>
             </div>
           </div>
-          <div id="form-der">
+          <div id="der">
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" placeholder="Hola..." id="mensaje"></textarea>
           </div>
