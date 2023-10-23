@@ -13,11 +13,11 @@ html {
 }
 
 :root {
-  --color-1: #1d0a00;
-  --color-2: #743414;
-  --color-3: #8d4925;
-  --color-4: #b96e48;
-  --color-5: #e6966e;
+  --color-1: #683d20;
+  --color-2: #c47947;
+  --color-3: #ffc26f;
+  --color-4: #f9e0bb;
+  --color-5: #e2cdc2;
   --ancho-fijo: 1200px;
 }
 
@@ -103,9 +103,9 @@ li:hover {
 /* ----------- SECCION 2 ------------ */
 
 #sec2 {
-  background-color: var(--color-3);
+  background-color: var(--color-1);
   color: white;
-  padding-bottom: 60px;
+  padding-bottom: 150px;
 }
 h2 {
   text-align: center;
@@ -114,7 +114,7 @@ h2 {
 }
 #sec2 article {
   width: 350px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 240, 198, 0.3);
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -156,13 +156,19 @@ h2 {
 
 #sec3 {
   color: white;
-  background-color: var(--color-5);
+  background-color: var(--color-2);
   padding-bottom: 70px;
 }
 
 #sec3 h2 {
   font-family: "Cedarville Cursive";
   font-size: 60px;
+  background-color: var(--color-3);
+  margin-bottom: 50px;
+  max-width: none;
+  padding: 5px 0px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5),
+    0px -10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
 .grilla {
@@ -171,10 +177,15 @@ h2 {
   grid-auto-rows: 200px;
   grid-gap: 10px;
   margin: 0 auto;
+  padding: 40px;
+  background-color: var(--color-3);
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .collage-item {
   overflow: hidden;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.6);
 }
 
 .collage-item img {
@@ -200,7 +211,7 @@ h2 {
 /* ----------- SECCION 4 ------------ */
 
 #sec4 {
-  background-color: var(--color-4);
+  background-color: var(--color-1);
   background-image: url("img/fall1.png");
   background-position: center;
   background-size: 400px;
@@ -217,7 +228,8 @@ h2 {
   display: flex;
   width: 100%;
   height: auto;
-  background-color: #ffdfcf;
+  background-color: var(--color-2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .bigArticle #imagen {
@@ -273,7 +285,9 @@ h2 {
 table {
   border-collapse: collapse;
 }
-
+th {
+  color: #1d0a00;
+}
 th,
 td {
   border: 1px solid grey;
@@ -286,9 +300,10 @@ th {
 }
 
 .btn-comprar {
-  background-color: #838383;
+  background-color: var(--color-3);
   padding: 14px;
-  color: white;
+  font-weight: 700;
+  color: black;
   display: inline-block;
   text-decoration: none;
 }
@@ -299,12 +314,14 @@ th {
   display: flex;
   flex-direction: column;
   margin-top: 70px;
-  border-top: #ffdfcf 4px solid;
-  padding-bottom: 70px;
+  border-top: var(--color-2) 4px solid;
+  padding-bottom: 100px;
 }
 #subSec4 .tagDescuento {
   font-size: 10px;
-  padding: 3px;
+  padding: 3px 7px;
+  color: black;
+  font-weight: 700;
 }
 #subSec4 .btn-comprar {
   font-size: 13px;
@@ -329,8 +346,9 @@ th {
 #article-container article {
   width: 350px;
   display: flex;
-  background-color: #ffdfcf;
+  background-color: var(--color-2);
   padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #article-container article img {
@@ -360,15 +378,15 @@ th {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
-  background-color: var(--color-5);
+  padding: 80px 0px;
+  background-color: var(--color-2);
 }
 
 #sec5 h2 {
   color: white;
 
   padding: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 #sec5 form {
@@ -420,6 +438,7 @@ form label:nth-child(5) {
 label {
   font-weight: 700;
   font-size: 14px;
+  color: white;
 }
 
 form select {
@@ -428,9 +447,10 @@ form select {
 
 input[type="submit"] {
   float: right;
-  background-color: #838383;
+  background-color: var(--color-3);
   padding: 10px 20px;
-  color: white;
+  color: black;
+  font-weight: 700;
   cursor: pointer;
   margin-top: 20px;
 }
